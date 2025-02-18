@@ -1,0 +1,12 @@
+cmd/cmd/*/
+cmd/internal/api/*/
+cmd/internal/configuration/*/
+cmd/internal/lib/*
+#Whitelist
+!Dockerfile
+!/.gitignore
+!cmd/cmd/hub/
+!cmd/internal/api/hub/
+!cmd/internal/configuration/hub/
+!cmd/internal/lib/hub.go
+!*.go

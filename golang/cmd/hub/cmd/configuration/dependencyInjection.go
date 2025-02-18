@@ -1,7 +1,7 @@
 package configuration
 
 import (
-	"crave/internal/api/hub"
+	hub "crave/hub/api"
 
 	"github.com/gin-gonic/gin"
 	"github.com/neo4j/neo4j-go-driver/neo4j"
@@ -21,7 +21,6 @@ func NewContainer(variable *Variable, DB *neo4j.Driver, router *gin.Engine) *Con
 		variable = NewVariable()
 	}
 
-	
 	repo := hub.NewRepository(DB)
 	service := hub.NewService(repo)
 	controller := hub.NewController(service)

@@ -1,14 +1,14 @@
 package lib
 
 import (
-	configuration "crave/internal/configuration/hub"
+	"crave/hub/configuration"
 	"fmt"
 	"net"
 
 	"google.golang.org/grpc"
 )
 
-func StartHubLib(container *configuration.Container) error {
+func Start(container *configuration.Container) error {
 	if err := startApiServer(container); err != nil {
 		return err
 	}
@@ -17,8 +17,8 @@ func StartHubLib(container *configuration.Container) error {
 	}
 	return nil
 }
-
 func startApiServer(container *configuration.Container) error {
+
 	hubGroup := container.Router.Group("/hub")
 	{
 		hubGroup.GET("", container.HubHandler.Default)

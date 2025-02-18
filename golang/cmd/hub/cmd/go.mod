@@ -1,4 +1,4 @@
-module crave
+module crave/hub
 
 go 1.23.5
 
@@ -8,7 +8,10 @@ require (
 	google.golang.org/grpc v1.70.0
 )
 
+replace crave/shared => ../../shared
+
 require (
+	crave/shared v0.0.0-00010101000000-000000000000 // indirect
 	github.com/bytedance/sonic v1.11.6 // indirect
 	github.com/bytedance/sonic/loader v0.1.1 // indirect
 	github.com/cloudwego/base64x v0.1.4 // indirect

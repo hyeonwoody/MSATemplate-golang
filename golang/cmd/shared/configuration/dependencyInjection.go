@@ -1,7 +1,7 @@
 package configuration
 
 import (
-	hub "crave/internal/configuration/hub"
+	hub "crave/hub/configuration"
 
 	"github.com/gin-gonic/gin"
 	"github.com/neo4j/neo4j-go-driver/neo4j"

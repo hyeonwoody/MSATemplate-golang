@@ -1,7 +1,7 @@
 package database
 
 import (
-	"crave/configuration"
+	"crave/shared/configuration"
 	"log"
 
 	"github.com/neo4j/neo4j-go-driver/neo4j"
