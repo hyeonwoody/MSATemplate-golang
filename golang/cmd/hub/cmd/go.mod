@@ -1,8 +1,9 @@
-module crave/hub
+module crave/hub/cmd
 
 go 1.23.5
 
 require (
+	crave/shared v0.0.0-00010101000000-000000000000
 	github.com/gin-gonic/gin v1.10.0
 	github.com/neo4j/neo4j-go-driver v1.8.3
 	google.golang.org/grpc v1.70.0
@@ -11,7 +12,6 @@ require (
 replace crave/shared => ../../shared
 
 require (
-	crave/shared v0.0.0-00010101000000-000000000000 // indirect
 	github.com/bytedance/sonic v1.11.6 // indirect
 	github.com/bytedance/sonic/loader v0.1.1 // indirect
 	github.com/cloudwego/base64x v0.1.4 // indirect

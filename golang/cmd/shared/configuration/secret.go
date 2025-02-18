@@ -1,7 +1,7 @@
 package configuration
 
 import (
-	hub "crave/hub/configuration"
+	hub "crave/hub/cmd/configuration"
 )
 
 type Database struct {

@@ -1,8 +1,8 @@
 package main
 
 import (
-	hubConfig "crave/hub/configuration"
-	"crave/hub/lib"
+	hubConfig "crave/hub/cmd/configuration"
+	"crave/hub/cmd/lib"
 	"crave/shared/configuration"
 	"crave/shared/database"
 

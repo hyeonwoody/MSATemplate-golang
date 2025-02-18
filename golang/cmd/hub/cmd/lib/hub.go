@@ -1,7 +1,7 @@
 package lib
 
 import (
-	"crave/hub/configuration"
+	"crave/hub/cmd/configuration"
 	"fmt"
 	"net"
 
